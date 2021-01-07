@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!DOCTYPE news_article[
+<!ELEMENT news_article (title, author, publish_date, notice_to, body, tags)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT publish_date (#PCDATA)>
+<!ELEMENT notice_to (#PCDATA)>
+<!ELEMENT body (introduction, affects, possible_symptoms, mental_health_screening, self_care, guiding_principle, reach_out, getting_support, military, civilian, more_info)>
+<!ELEMENT introduction (#PCDATA)>
+<!ELEMENT affects (#PCDATA)>
+<!ELEMENT possible_symptoms (symptoms+)>
+<!ELEMENT symptoms (#PCDATA)>
+<!ELEMENT mental_health_screening (#PCDATA|link)*>
+<!ELEMENT self_care (#PCDATA)>
+<!ELEMENT guiding_principle (suggestion+)>
+<!ELEMENT suggestion (#PCDATA)>
+<!ELEMENT reach_out (#PCDATA)>
+<!ELEMENT getting_support (#PCDATA)>
+<!ELEMENT military (#PCDATA|link|phone_number)*>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT phone_number (#PCDATA)>
+<!ELEMENT civilian (#PCDATA|link|phone_number)*>
+<!ELEMENT more_info (#PCDATA|link)*>
+<!ELEMENT tags (tag+)>
+<!ELEMENT tag (#PCDATA)>
+<!ATTLIST news_article id ID #REQUIRED>
+<!ATTLIST title fontsize (18|20|24|30) "30">
+<!ATTLIST title isbold (true|false) "true">
+<!ATTLIST notice_to isbold (true|false) "true">
+<!ATTLIST link url CDATA #REQUIRED>
+
+
+]>
+<news_article id="id1">
+    <title fontsize="30" isbold="true">Understanding Depression</title>
+    <author> By Greg Chadwick, Air Force Material Command Health and Wellness Team </author>
+    <publish_date> Published September 24, 2020</publish_date>
+    <notice_to isbold="true">Edwards Air Force Base, California </notice_to>
+    <body>
+        <introduction>
+            This is a stressful, uncertain time.  The COVID-19 pandemic has brought many significant changes to how we live daily life.  Social distancing, quarantine, and isolation can be overwhelming and may cause feelings of insecurity, confusion, hopelessness, and, ultimately, depression.
+        </introduction>
+        <affects>
+            The National Institute for Mental Health defines depression as a common but serious mood disorder that negatively affects how you feel, think, and handle daily activities such as sleeping, eating, and working.  People who are dealing with depression typically experience one or more of the following symptoms: 
+        </affects>
+        <possible_symptoms>
+            <symptoms>Persistent sad, or “empty” mood </symptoms>
+            <symptoms>Feelings of hopelessness, or pessimism</symptoms>
+            <symptoms>Irritability</symptoms>
+            <symptoms>Feelings of guilt, worthlessness, or helplessness</symptoms>
+            <symptoms>Loss of interest or pleasure in hobbies and activities</symptoms>
+            <symptoms>Decreased energy or fatigue</symptoms>
+            <symptoms>Difficulty concentrating, remembering, or making decisions</symptoms>
+            <symptoms>Difficulty sleeping, early-morning awakening, or oversleeping</symptoms>
+            <symptoms>Appetite and/or weight changes</symptoms>
+            <symptoms>Thoughts of death or suicide, or suicide attempts</symptoms>
+            <symptoms>Aches or pains, headaches, cramps, or digestive problems without a clear physical cause and/or that do not ease event with treatment</symptoms>
+        </possible_symptoms>
+        <mental_health_screening>
+            We all have days when we feel down, but when the periods of sadness persist and are severe enough to impact daily functioning, it may be time to assess your emotional health by completing a self-assessment.  You can take a free, anonymous, and confidential mental health screening today at: <link url = "helpyourselfhelpothers.org">helpyourselfhelpothers.org</link>.  Screening results are educational, not diagnostic, but are provided so participants may find out quickly if a consultation with a mental health professional would be helpful. 
+        </mental_health_screening>
+        <self_care>
+            During the COVID-19 pandemic, you may experience stress, fear, sadness and loneliness.  Learning self-care strategies can help you take charge of your life and are good for your mental and physical health.  A guiding principle that can help us all cope effectively during this time is to focus on what we can control.
+        </self_care>
+        <guiding_principle>
+            <suggestion>Keep routines as much as possible. Maintaining structure and routine is critical because it reinforces order and predictability, and is something over which we have control.</suggestion>
+            <suggestion>Stay connected.  Identify friends and family that you can check in with regularly.  FaceTime, Skype, phone calls and other social media platforms can be a great way to connect family and friends.</suggestion>
+            <suggestion>Take breaks from listening to the news. Constant news about COVID-19 from all types of media can heighten fears about the disease. It is important to stay informed, however, if you are noticing an impact on your mood/stress, it may be time to limit your exposure. </suggestion>
+            <suggestion>Engage in self-care.  Participate in regular physical activity to reduce stress and improve mood.  Eat healthy, nutritious foods and drink plenty of water. Avoid tobacco, alcohol and drugs. Get at least seven hours of sleep each night.</suggestion>
+            <suggestion>Do what you can to protect yourself and your family, including excellent hygiene and social distancing practices.  Wash your hands frequently and thoroughly, wear a mask when you venture out, and keep your distance from people you don’t live with.</suggestion>
+        </guiding_principle>
+        <reach_out>
+            How can you tell when bad days or weeks have turned into a clinical depression that you shouldn’t try to address on your own?  A consultation with a mental health professional is recommended when feelings or tendencies have become persistent and have affected you consistently for more than two weeks.  Your initial phone call or email doesn’t commit you immediately to treatment, so don’t be afraid to reach out.
+        </reach_out>
+        <getting_support>
+            Getting support plays an essential role in coping with depression.  Professional counseling services are available for the AFMC workforce and their families.
+        </getting_support>
+        <military>
+            Military members can contact their local mental health clinic for services.  Military OneSource is another option for military and their families.  For more information, call <phone_number>(800) 342-9647</phone_number> or visit <link url = "militaryonesource.mil">militaryonesource.mil</link>.
+        </military>
+        <civilian>
+            Civilian employees may contact the Employee Assistance Program for free, confidential counseling services at <phone_number>(866) 580-9078</phone_number> or visit the EAP website at <link url = "AFPC.af.mil/EAP">AFPC.af.mil/EAP </link>.
+        </civilian>
+        <more_info>
+            For more information on depression education materials, visit <link url = "USAFwellness.com">USAFwellness.com</link> or contact your local Civilian Health Promotion Services team.  Comprehensive information on mental health can be found at the National Institute of Mental Health at: nimh.nih.gov.
+        </more_info>
+    </body>
+    <tags>
+        <tag>Air Force Material Command</tag>
+        <tag>AFMC</tag>
+    </tags>
+</news_article>
